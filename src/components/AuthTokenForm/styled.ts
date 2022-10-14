@@ -81,7 +81,7 @@ export const InputLabel = styled.label<AuthTokenFormComponent.InputLabel>`
 
 export const Input = styled.input<AuthTokenFormComponent.Input>`
 	width: 100%;
-	color: ${({ theme }) => theme.color.quaternary};
+	color: ${({ theme }) => theme.color.secondary};
 	font-size: 1.5rem;
 	font-weight: ${({ theme }) => theme.fontWeight.medium};
 	background: none;
@@ -128,7 +128,7 @@ export const Btn = styled.button`
 
 	&:hover {
 		transform: scale(1.04);
-		background: ${({ theme }) => theme.color.quaternary};
+		background: ${({ theme }) => theme.color.secondary};
 	}
 
 	@media ${({ theme }) => theme.breakpoint.lg} {
