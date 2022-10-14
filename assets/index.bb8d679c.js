@@ -154,7 +154,7 @@ ${(n=t.response)==null?void 0:n.data.message}`)}});var Gp={color:void 0,size:voi
 	}
 `,$i=ut.input`
 	width: 100%;
-	color: ${({theme:e})=>e.color.quaternary};
+	color: ${({theme:e})=>e.color.secondary};
 	font-size: 1.5rem;
 	font-weight: ${({theme:e})=>e.fontWeight.medium};
 	background: none;
@@ -195,7 +195,7 @@ ${(n=t.response)==null?void 0:n.data.message}`)}});var Gp={color:void 0,size:voi
 
 	&:hover {
 		transform: scale(1.04);
-		background: ${({theme:e})=>e.color.quaternary};
+		background: ${({theme:e})=>e.color.secondary};
 	}
 
 	@media ${({theme:e})=>e.breakpoint.lg} {
