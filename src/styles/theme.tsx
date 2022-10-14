@@ -18,7 +18,7 @@ export const color = {
 	light: "#eee",
 
 	primary: "#1366FF",
-	secondary: "#0643B3",
+	secondary: "#fc9d2a",
 
 	error: "#ff6b6b",
 
