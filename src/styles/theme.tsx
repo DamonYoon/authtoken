@@ -45,13 +45,13 @@ export const height = {
 };
 
 export const width = {
-	xxs: "480px",
-	xs: "600px",
-	sm: "768px",
-	md: "900px",
-	lg: "1024px",
-	xl: "1280px",
-	timeLine: "8px",
+	xxs: "320px",
+	xs: "420px",
+	sm: "576px",
+	md: "768px",
+	lg: "992px",
+	xl: "1200px",
+	xxl: "1400px",
 };
 
 export const breakpoint = {
@@ -104,11 +104,5 @@ export const components = {
 		padding: 1rem 2rem;
 		width: 100vw;
 		height: 100vh;
-	`,
-
-	title: (fontSize = "3rem") => `
-		font-size: ${fontSize};
-		font-weight: ${fontWeight.bold};
-		line-height: calc(${fontSize} + 2rem);
 	`,
 };

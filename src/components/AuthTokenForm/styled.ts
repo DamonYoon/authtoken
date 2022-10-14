@@ -3,7 +3,6 @@ import {IoMdCopy} from "react-icons/io"
 
 export const Container = styled.main`
 	${({ theme }) => theme.components.container("column", "center", "center")}
-	padding: 2rem;
 `;
 
 export const FormWrap = styled.div`
@@ -17,19 +16,38 @@ export const FormWrap = styled.div`
 	overflow: hidden;
 
 	@media ${({ theme }) => theme.breakpoint.lg} {
+		width: ${({ theme }) => theme.width.sm};
+	}
+
+	@media ${({ theme }) => theme.breakpoint.md} {
 		width: ${({ theme }) => theme.width.xs};
 	}
 
 	@media ${({ theme }) => theme.breakpoint.sm} {
 		width: ${({ theme }) => theme.width.xxs};
+		padding: 1rem;
 	}
 `;
 
 export const Title = styled.h1`
-	${({ theme }) => theme.components.title("2rem")}
+	font-size: 2rem;
+	font-weight: ${({theme}) => theme.fontWeight.bold};
+	
 	color: ${({ theme }) => theme.color.dark};
 	text-align: center;
 	margin-bottom: 1rem;
+
+	@media ${({ theme }) => theme.breakpoint.lg} {
+		font-size: 2rem;
+	}
+
+	@media ${({ theme }) => theme.breakpoint.md} {
+		font-size: 1.5rem;
+	}
+
+	@media ${({ theme }) => theme.breakpoint.sm} {
+		font-size: 1.2rem;
+	}
 `;
 
 export const Form = styled.form`
@@ -58,6 +76,12 @@ export const InputBox = styled.div`
 		theme.mixins.flexBox("column", "space-between", "flex-start")}
 	margin: 1.5rem 1rem;
 	width: 65%;
+
+	@media ${({ theme }) => theme.breakpoint.md} {
+		font-size: 1rem;
+		width: 100%;
+		padding: 0 2rem;
+	}
 `;
 
 export const InputLabel = styled.label<AuthTokenFormComponent.InputLabel>`
@@ -74,8 +98,12 @@ export const InputLabel = styled.label<AuthTokenFormComponent.InputLabel>`
 		opacity: 0.5;
 	}
 
-	@media ${({ theme }) => theme.breakpoint.lg} {
+	@media ${({ theme }) => theme.breakpoint.md} {
 		font-size: 1.2rem;
+	}
+
+	@media ${({ theme }) => theme.breakpoint.sm} {
+		font-size: 1rem;
 	}
 `;
 
@@ -99,8 +127,12 @@ export const Input = styled.input<AuthTokenFormComponent.Input>`
 		border-bottom: 2px solid ${({ theme }) => theme.color.tertiary};
 	}
 
-	@media ${({ theme }) => theme.breakpoint.lg} {
+	@media ${({ theme }) => theme.breakpoint.md} {
 		font-size: 1.2rem;
+	}
+
+	@media ${({ theme }) => theme.breakpoint.sm} {
+		font-size: 1rem;
 	}
 `;
 
@@ -114,6 +146,12 @@ export const BtnWrap = styled.div`
 	${({ theme }) => theme.mixins.flexBox("row", "flex-end", "center")}
 	margin-top: 1rem;
 	padding-right: 2rem;
+	
+	@media ${({ theme }) => theme.breakpoint.md} {
+		font-size: 1rem;
+		width: 100%;
+		padding: 0 2rem;
+	}
 `;
 
 export const Btn = styled.button`
@@ -131,8 +169,9 @@ export const Btn = styled.button`
 		background: ${({ theme }) => theme.color.secondary};
 	}
 
-	@media ${({ theme }) => theme.breakpoint.lg} {
+	@media ${({ theme }) => theme.breakpoint.md} {
 		font-size: 1rem;
-		padding: 0.75rem 1rem;
+		width: 100%;
+		padding: .75rem;
 	}
 `;
