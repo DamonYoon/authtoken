@@ -13,8 +13,6 @@ cp dist/index.html dist/404.html
 # CNAME 파일을 이용해 커스텀 도메인을 지정할 수도 있습니다.
 # echo 'www.example.com' > CNAME
 
-# git init
-# git checkout -b main
 git add -A
 git commit -m 'deploy'
 
@@ -24,7 +22,8 @@ git commit -m 'deploy'
 # https://<USERNAME>.github.io/<REPO> 에 배포
 git push -f git@github.com:DamonYoon/create-authtoken.git main:gh-pages
 
+# cd -
+
 git add dist -f
 git commit -m "Adding dist"
 git subtree push --prefix dist origin gh-pages
-# cd -
